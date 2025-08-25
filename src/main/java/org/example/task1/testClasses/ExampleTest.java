@@ -1,13 +1,13 @@
-package org.example.testClasses;
+package org.example.task1.testClasses;
 
-import org.example.Exceptions.TestAssertionError;
-import org.example.annotations.AfterEach;
-import org.example.annotations.AfterSuite;
-import org.example.annotations.BeforeEach;
-import org.example.annotations.BeforeSuite;
-import org.example.annotations.Disabled;
-import org.example.annotations.Order;
-import org.example.annotations.Test;
+import org.example.task1.Exceptions.TestAssertionError;
+import org.example.task1.annotations.AfterEach;
+import org.example.task1.annotations.AfterSuite;
+import org.example.task1.annotations.BeforeEach;
+import org.example.task1.annotations.BeforeSuite;
+import org.example.task1.annotations.Disabled;
+import org.example.task1.annotations.Order;
+import org.example.task1.annotations.Test;
 
 public class ExampleTest {
 
