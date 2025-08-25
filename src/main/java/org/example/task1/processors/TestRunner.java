@@ -1,4 +1,4 @@
-package org.example.processors;
+package org.example.task1.processors;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
@@ -12,16 +12,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import org.example.Exceptions.BadTestClassError;
-import org.example.Exceptions.TestAssertionError;
-import org.example.annotations.AfterEach;
-import org.example.annotations.AfterSuite;
-import org.example.annotations.BeforeEach;
-import org.example.annotations.BeforeSuite;
-import org.example.annotations.Disabled;
-import org.example.annotations.Order;
-import org.example.annotations.Test;
-import org.example.enums.TestResult;
+import org.example.task1.Exceptions.BadTestClassError;
+import org.example.task1.Exceptions.TestAssertionError;
+import org.example.task1.annotations.AfterEach;
+import org.example.task1.annotations.AfterSuite;
+import org.example.task1.annotations.BeforeEach;
+import org.example.task1.annotations.BeforeSuite;
+import org.example.task1.annotations.Disabled;
+import org.example.task1.annotations.Order;
+import org.example.task1.annotations.Test;
+import org.example.task1.enums.TestResult;
 
 public class TestRunner {
 
