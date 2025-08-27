@@ -1,6 +1,7 @@
 package org.example.task2;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -70,12 +71,16 @@ public class StreamConvertor {
             .collect(Collectors.groupingBy(String::length, Collectors.toList()));
     }
 
-    public String getLongestWord(List<String> input) {
+    public List<String> getLongestWord(List<String> input) {
         return CollectionUtils.emptyIfNull(input).stream()
             .flatMap(string -> Arrays.stream(checkNullString(string).split(" ")))
             .map(w -> w.replaceAll("[^\\p{L}]", ""))
-            .max(Comparator.comparing(String::length))
-            .orElse("");
+            .collect(Collectors.groupingBy(String::length))
+            .entrySet()
+            .stream()
+            .max(Map.Entry.comparingByKey())
+            .map(Map.Entry::getValue)
+            .orElse(Collections.emptyList());
     }
 
     private String checkNullString(String string) {
