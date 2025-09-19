@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="20250919_init_table" author="DAverkin">
+        <sql>
+            create schema if not exists edu;
+        </sql>
+
+        <sql>
+            create table if not exists edu.users (id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+                                                  user_name varchar(25));
+        </sql>
+
+        <sql>
+            insert into edu.users (user_name)
+            values ('Dima'),
+                   ('Sasha'),
+                   ('Kirill'),
+                   ('Petr'),
+                   ('Ketty');
+        </sql>
+
+    </changeSet>
+</databaseChangeLog>
