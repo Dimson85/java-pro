@@ -1,0 +1,20 @@
+server:
+  tomcat:
+    threads:
+      max: 10
+    accept-count: 80
+  port: ${SERVER_PORT:8080}
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/edu
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 3
+  liquibase:
+    enabled: true
+    change-log: classpath:db/master.xml
+    default-schema: edu
+    liquibase-schema: edu
