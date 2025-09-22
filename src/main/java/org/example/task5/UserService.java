@@ -1,38 +1,33 @@
 package org.example.task5;
 
-import java.util.List;
-import java.util.Optional;
-
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Service;
 
 @Data
-@Service
+//@Service
 @RequiredArgsConstructor
-public class UserService implements CommandLineRunner {
-    private final UserRepository userRepository;
+public class UserService  {
+//    private final UserRepository userRepository;
+//
+//    public List<User> findAllUsers() {
+//        return userRepository.findAll();
+//    }
+//
+//    public Optional<User> findUser(Long id) {
+//        return userRepository.findById(id);
+//    }
+//
+//    public User saveUser(User user) {
+//        return userRepository.save(user);
+//    }
+//
+//    public void deleteUser(Long id) {
+//        userRepository.deleteById(id);
+//    }
 
-    public List<User> findAllUsers() {
-        return userRepository.findAll();
-    }
-
-    public Optional<User> findUser(Long id) {
-        return userRepository.findById(id);
-    }
-
-    public User saveUser(User user) {
-        return userRepository.save(user);
-    }
-
-    public void deleteUser(Long id) {
-        userRepository.deleteById(id);
-    }
-
-    @Override
-    public void run(String... args) throws Exception {
-        System.out.println("\n\n1. Наполнение таблицы: ");
-        findAllUsers().forEach(System.out::println);
-    }
+//    @Override
+//    public void run(String... args) throws Exception {
+//        System.out.println("\n\n1. Наполнение таблицы: ");
+//        findAllUsers().forEach(System.out::println);
+//    }
 }
