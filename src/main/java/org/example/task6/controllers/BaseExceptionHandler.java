@@ -2,7 +2,9 @@ package org.example.task6.controllers;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.task6.dto.ApiErrorResponse;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
@@ -14,9 +16,9 @@ public class BaseExceptionHandler {
      * @param t необработанная ошибка
      * @return статус 500, обёртка с сообщением об ошибке
      */
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(Throwable.class)
     public ApiErrorResponse handleThrowable(Throwable t) {
-        log.error(t.getMessage(), t);
         return new ApiErrorResponse(t.getLocalizedMessage());
     }
 }

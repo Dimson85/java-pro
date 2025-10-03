@@ -26,7 +26,7 @@ public class ProductService {
     }
 
     public ProductDto findProductById(Long id) {
-        return mapper.toProductDto(productRepository.findById(id).orElse(new Product()));
+        return mapper.toProductDto(productRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Product not found")));
     }
 
     public void saveProduct(ProductDto dto) {
