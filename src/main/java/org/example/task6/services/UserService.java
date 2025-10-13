@@ -36,7 +36,7 @@ public class UserService implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        System.out.println("\n\n1. Наполнение таблицы: ");
-        findAllUsers().forEach(System.out::println);
+//        System.out.println("\n\n1. Наполнение таблицы: ");
+//        findAllUsers().forEach(System.out::println);
     }
 }

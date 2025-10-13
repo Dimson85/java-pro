@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="20251009_create_table_user_limits" author="DAverkin">
+        <sql>
+            create table if not exists edu.user_limits(
+                user_id         integer          PRIMARY KEY,
+                daily_limit     numeric(15,2)   NOT NULL,
+                reserve         numeric(15,2)   NOT NULL,
+                default_limit   numeric(15,2)   NOT NULL,
+                last_reset      timestamp       NOT NULL);
+        </sql>
+    </changeSet>
+</databaseChangeLog>

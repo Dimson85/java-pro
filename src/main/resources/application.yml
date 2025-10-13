@@ -18,3 +18,8 @@ spring:
     change-log: classpath:db/master.xml
     default-schema: edu
     liquibase-schema: edu
+
+edu:
+  limit-scheduler:
+    enable: true
+

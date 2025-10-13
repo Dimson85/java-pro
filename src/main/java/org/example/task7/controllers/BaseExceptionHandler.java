@@ -1,12 +1,14 @@
-package org.example.task6.controllers;
+package org.example.task7.controllers;
 
+import lombok.extern.slf4j.Slf4j;
 import org.example.task6.dto.ApiErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-//@RestControllerAdvice(assignableTypes = ProductController.class)
-//@Slf4j
+@RestControllerAdvice(assignableTypes = ProductController.class)
+@Slf4j
 public class BaseExceptionHandler {
     /**
      * Общий обработчик ошибок.
