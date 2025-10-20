@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="20250922_create_table_products" author="DAverkin">
+        <sql>
+            create table if not exists edu.products(id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+                                                    account_number varchar(25) NOT NULL,
+                                                    balance DECIMAL(15,2),
+                                                    product_type varchar(10) NOT NULL,
+                                                    user_id bigint NOT NULL,
+                                                    CONSTRAINT fk_product_user
+                                                    FOREIGN KEY (user_id)
+                                                    REFERENCES users(id)
+                                                    ON DELETE CASCADE);
+        </sql>
+    </changeSet>
+</databaseChangeLog>

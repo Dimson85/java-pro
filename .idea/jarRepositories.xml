@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="intr-maven-proxy-group" />
+      <option name="name" value="intr-maven-proxy-group" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/intr-maven-proxy-group/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="intr-maven-lib" />
+      <option name="name" value="intr-maven-lib" />
+      <option name="url" value="https://sfera.inno.local/app/repo-ci-maven/api/repository/intr-maven-lib/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="pfomb-maven-proxy-group" />
+      <option name="name" value="pfomb-maven-proxy-group" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/pfomb-maven-proxy-group/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="intr-maven" />
+      <option name="name" value="intr-maven" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/intr-maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="intr-maven-snapshot" />
+      <option name="name" value="intr-maven-snapshot" />
+      <option name="url" value="https://sfera.inno.local/app/repo-ci-maven/api/repository/intr-maven-snapshot/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="trns-maven-lib" />
+      <option name="name" value="trns-maven-lib" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/trns-maven-lib/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="zfr-maven-snapshot" />
+      <option name="name" value="zfr-maven-snapshot" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/zfr-maven-snapshot/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://sfera.inno.local/app/repo-ci-maven/api/repository/intr-maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="MavenRepo" />
+      <option name="name" value="MavenRepo" />
+      <option name="url" value="https://repo.maven.apache.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="tslg-maven-pub" />
+      <option name="name" value="tslg-maven-pub" />
+      <option name="url" value="https://sfera.inno.local/app/repo-ci-maven/api/repository/tslg-maven-pub" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="intr-maven-lib" />
+      <option name="name" value="intr-maven-lib" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/intr-maven-lib/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="intr-maven-proxy-group" />
+      <option name="name" value="intr-maven-proxy-group" />
+      <option name="url" value="https://sfera.inno.local/app/repo-ci-maven/api/repository/intr-maven-proxy-group/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="zfr-maven" />
+      <option name="name" value="zfr-maven" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/zfr-maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="pfom-maven-lib" />
+      <option name="name" value="pfom-maven-lib" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/pfom-maven-lib/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="pfomb-maven" />
+      <option name="name" value="pfomb-maven" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/pfomb-maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="intr-maven" />
+      <option name="name" value="intr-maven" />
+      <option name="url" value="https://sfera.inno.local/app/repo-ci-maven/api/repository/intr-maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="zfr-maven-lib" />
+      <option name="name" value="zfr-maven-lib" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/zfr-maven-lib/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="intr-maven-snapshot" />
+      <option name="name" value="intr-maven-snapshot" />
+      <option name="url" value="https://nexus-ci.corp.dev.vtb/repository/intr-maven-snapshot/" />
+    </remote-repository>
+  </component>
+</project>
