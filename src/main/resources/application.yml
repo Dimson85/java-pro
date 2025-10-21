@@ -6,6 +6,8 @@ server:
   port: ${SERVER_PORT:8080}
 
 spring:
+  config:
+    import: kafka.yml
   datasource:
     url: jdbc:postgresql://localhost:5432/edu
     username: postgres
@@ -18,3 +20,7 @@ spring:
     change-log: classpath:db/master.xml
     default-schema: edu
     liquibase-schema: edu
+logging:
+  level:
+    org.apache.kafka.clients.producer:
+      ProducerConfig: ERROR
