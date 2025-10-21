@@ -1,0 +1,15 @@
+javapro:
+  kafka:
+    enabled: true
+    bootstrap-servers: localhost:9093
+    security.protocol: PLAINTEXT
+    producer:
+      topic:
+        fruit: fruit-req
+    consumer:
+      topic:
+        fruit: fruit-req
+      group-id: javapro
+      auto-offset-reset: latest
+    listener:
+      concurrency: 1
