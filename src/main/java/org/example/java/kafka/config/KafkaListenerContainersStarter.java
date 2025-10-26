@@ -26,4 +26,11 @@ public class KafkaListenerContainersStarter {
             .getListenerContainers()
             .forEach(Lifecycle::start);
     }
+
+    public void stop() {
+        log.info("Слушатели Kafka-сообщений завершают работу");
+        kafkaListenerEndpointRegistry
+            .getListenerContainers()
+            .forEach(Lifecycle::stop);
+    }
 }

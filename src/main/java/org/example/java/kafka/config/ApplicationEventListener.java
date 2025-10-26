@@ -1,5 +1,7 @@
 package org.example.java.kafka.config;
 
+import jakarta.annotation.PreDestroy;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.annotation.Configuration;
@@ -14,5 +16,10 @@ public class ApplicationEventListener {
     @EventListener(ApplicationReadyEvent.class)
     public void handleApplicationReadyEvent() {
         containersStarter.start();
+    }
+
+    @PreDestroy
+    public void handleShutdown() {
+        containersStarter.stop();
     }
 }
