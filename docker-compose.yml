@@ -3,6 +3,7 @@ version: "3.9"
 services:
   kafka1:
     image: 'bitnami/kafka:latest'
+    container_name: kafka_java_pro
     environment:
       - KAFKA_CFG_NODE_ID=1
       - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
@@ -10,7 +11,7 @@ services:
       - KAFKA_CFG_PROCESS_ROLES=broker,controller
       - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
       - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,CLIENT:PLAINTEXT,EXTERNAL:PLAINTEXT
-      - KAFKA_CFG_LISTENERS=CONTROLLER://:9094,CLIENT://:9093,EXTERNAL://:9093
+      - KAFKA_CFG_LISTENERS=CONTROLLER://:9094,CLIENT://:9095,EXTERNAL://:9093
       - KAFKA_CFG_ADVERTISED_LISTENERS=CLIENT://kafka1:9092,EXTERNAL://localhost:9093
       - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=CLIENT
       - KAFKA_CFG_BROKER_ID=1
@@ -18,6 +19,8 @@ services:
       - ALLOW_PLAINTEXT_LISTENER=yes
     ports:
       - "9093:9093"
+      - "9094:9094"
+      - "9095:9095"
   ui:
     depends_on:
       - kafka1
